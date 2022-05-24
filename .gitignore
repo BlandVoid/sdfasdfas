@@ -1,0 +1,14 @@
+#
+.env
+
+#
+venv/
+__pycache__/
+
+#
+static/
+media/
+
+#
+node_modules/
+build/

@@ -1,0 +1,21 @@
+@api = {{$dotenv API}}
+@exam = {{$dotenv EXAM}}
+@year = {{$dotenv YEAR}} 
+@board = {{$dotenv BOARD}}
+@roll = {{$dotenv ROLL}}
+@reg = {{$dotenv REG}}
+
+###
+POST {{api}}/result/
+Content-Type: application/json
+
+{
+    "exam": "{{exam}}",
+    "board": "{{board}}",
+    "year": "{{year}}",
+    "roll": "{{roll}}",
+    "reg": "{{reg}}"
+}
+
+###
+# GET {{api}}/result/info/
